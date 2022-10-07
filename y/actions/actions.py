@@ -79,7 +79,7 @@ class Validity(Action):
         # week_ago = curent_date + datetime.timedelta(days=7)
         week_ago = datetime.now(tz=pytz.utc) + timedelta(days=7)
         week_ago = week_ago.strftime("%Y:%m:%d %H:%M:%S")
-        print("week ago", week_ago)
+        # print("week ago", week_ago)
         # str(datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S"))
 
 
