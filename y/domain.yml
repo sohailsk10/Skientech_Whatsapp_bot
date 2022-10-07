@@ -1,0 +1,23 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - membership_id
+
+responses:
+  utter_greet:
+  - text: "Please Enter your Membership ID"
+
+  utter_goodbye:
+  - text: "Bye"
+
+actions:
+  - member_id
+  - validity
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
